@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -E main && ./main >c
+gcc $CFILE -o main && ./main >c
