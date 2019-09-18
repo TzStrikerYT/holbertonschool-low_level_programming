@@ -6,6 +6,6 @@
 */
 int main(void)
 {
-printf("Hello Betty\n");
+puts("Hello Betty\n");
 return (0);
 }
