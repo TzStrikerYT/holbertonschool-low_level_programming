@@ -10,13 +10,13 @@ int num;
 for (num = 48; num < 58; num++)
 {
 putchar(num);
-putchar(32);
 if (num == 57)
 {
 putchar('\n');
 break;
 }
 putchar(44);
+putchar(32);
 }
 return (0);
 }
