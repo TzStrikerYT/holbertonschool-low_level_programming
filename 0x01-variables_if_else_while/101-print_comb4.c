@@ -15,10 +15,10 @@ for (numx = num + 1; numx < 58; numx++)
 {
 for (numz = numx + 1; numz < 58; numz++)
 {
-putchar(num);    
+putchar(num);
 putchar(numx);
 putchar(numz);
-if(num == 55 && numx == 56 && numz == 57)
+if (num == 55 && numx == 56 && numz == 57)
 {
 putchar('\n');
 break;
