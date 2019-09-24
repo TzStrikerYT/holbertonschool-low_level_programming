@@ -13,8 +13,18 @@ int print_last_digit(int n)
 	int abs;
 	int last;
 
-	abs = fabs(n);
-	last = abs % 10;
+	if (n < 0)
+	{
+		abs = fabs(n);
+		last = abs % 10;
+
+	}
+	else
+	{
+
+	last = n % 10;
+
+	}
 	_putchar('0' + last);
 
 	return (last);
