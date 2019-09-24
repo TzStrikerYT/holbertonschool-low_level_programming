@@ -13,26 +13,26 @@ void times_table(void)
 
 	for (y = 0; y <= 9; y++)
 	{
-		putchar('0');
+		_putchar('0');
 		for (x = 1; x <= 9; x++)
 		{
 			num = x * y;
 			if (num < 10)
 			{
 
-				putchar(44);
-				putchar(' ');
-				putchar(' ');
-				putchar('0' + num);
+				_putchar(44);
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + num);
 			}
 			if (num >= 10 && num <= 82)
 			{
-				putchar(44);
-				putchar(' ');
-				putchar('0' + num / 10);
-				putchar('0' + num % 10);
+				_putchar(44);
+				_putchar(' ');
+				_putchar('0' + num / 10);
+				_putchar('0' + num % 10);
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
