@@ -1,34 +1,40 @@
 #include <stdio.h>
 
 /**
- * main - print numbers and words Fizz, Buzz.
+ * main - Print numbers of 1 to 100, fix multipler 3 abd 5
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
+        int i = 0;
 
-	int i;
+        for (i = 1; i <= 100; i++)
+        {
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                        printf("FizzBuzz");
+                }
+                else if (i % 3 == 0)
+                {
+                        printf("Fizz");
+                }
+                else if (i % 5 == 0)
+                {
+                        printf("Buzz");
+                }
+                else
+                {
+                        printf("%d", i);
+                }
 
-	for (i = 1; i < 100; i++)
-	{
-		if (i % 5 == 0 && i != 0)
-		{
-			printf("Buzz ");
-		}
-		else if (i % 3 == 0 && i != 0)
-		{
-			printf("Fizz ");
-		}
-		else
-		{
-			printf("%d ", i);
-		}
-	}
-	printf("Buzz");
-	putchar('\n');
+                if (i != 100)
+                {
+                        printf(" ");
+                }
+        }
+        putchar('\n');
 
-	return (0);
-
+        return (0);
 }
