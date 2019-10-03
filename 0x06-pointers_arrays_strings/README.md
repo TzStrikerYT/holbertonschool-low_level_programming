@@ -1,0 +1,1 @@
+#This directory contains c project pointers and arrays and strings
