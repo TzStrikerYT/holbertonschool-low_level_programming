@@ -11,7 +11,6 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	int flag = 0;
 
 	for (i = 0; *s != '\0'; i++)
 	{
@@ -21,15 +20,8 @@ char *_strchr(char *s, char c)
 		}
 		else if (c == s[i])
 		{
-			flag++;
 			return (s + i);
 		}
 	}
-
-	if (flag == 0)
-	{
-		return (0);
-	}
 	return (s + i);
-
 }
