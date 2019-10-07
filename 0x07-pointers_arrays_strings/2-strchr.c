@@ -1,3 +1,5 @@
+#include "holberton.h"
+
 /**
  * _strchr - Substring function.
  * @s: Contains a String.
