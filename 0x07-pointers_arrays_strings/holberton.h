@@ -1,3 +1,4 @@
+char *_strstr(char *haystack, char *needle);
 char *_strpbrk(char *s, char *accept);
 void simple_print_buffer(char *buffer, unsigned int size);
 void simple_print_buffer(char *buffer, unsigned int size);
