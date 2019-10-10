@@ -23,6 +23,14 @@ int _number(int a, int x)
 	return (_number(a, x + 1));
 }
 
+/**
+ * _sqrt_recursion - return raiz for any number.
+ *
+ * @n: raiz number.
+ *
+ * Return: raiz of the number.
+ */
+
 int _sqrt_recursion(int n)
 {
 	return (_number(n, 1));
