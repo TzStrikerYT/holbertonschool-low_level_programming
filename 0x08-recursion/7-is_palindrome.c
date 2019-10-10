@@ -27,7 +27,7 @@ int _vs(char *a, int len)
 {
 	if (*a != *(a + len))
 	{
-		return(0);
+		return (0);
 	}
 	else if (*a == 0)
 	{
@@ -46,5 +46,6 @@ int _vs(char *a, int len)
 int is_palindrome(char *s)
 {
 	int len = _count(s, 0);
-	return(_vs(s, len));
+
+	return (_vs(s, len));
 }
