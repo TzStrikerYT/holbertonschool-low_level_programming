@@ -1,3 +1,6 @@
+int _vs(char *a, int len);
+int _length(char a, int len);
+int is_palindrome(char *s);
 int _number(int a, int x);
 int is_prime_number(int n);
 int _sqrt_recursion(int n);
