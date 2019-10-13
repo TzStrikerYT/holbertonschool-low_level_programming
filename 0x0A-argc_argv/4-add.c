@@ -1,6 +1,6 @@
-#include <stdlib.h>
-#include "holberton.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - Entry point
@@ -11,23 +11,22 @@
 
 int main(int argc, char *argv[])
 {
-	int res;
+	int i = 0;
+	int j = 0;
+	int add = 0;
 
-	if (argc - 1 > 1)
+	for (i = 1; i < argc; i++)
 	{
-		res = atoi(argv[1]) + atoi(argv[2]);
-		printf("%d\n", res);
+		for (i = 0; argv[i][j] != '\0'; j++)
+		{
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		add += atoi(argv[i]);
 	}
-	else
-	{
-		puts("0");
-		return (1);
-	}
+	printf("%d\n", add);
 	return (0);
 }
-
-int _number(char *s)
-
-	for (;s*;s++)
-	{
-		if (*s > 47 && *s < 58)
