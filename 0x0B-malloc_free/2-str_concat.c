@@ -3,10 +3,11 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - copy an array.
- * @str: Contains a string to copy..
+ * *str_concat - concat two strings.
+ * @s1: Contains a string
+ * @s2: contains a string to concat whit s1.
  *
- * Return: new array.
+ * Return: new String.
  */
 
 char *str_concat(char *s1, char *s2)
@@ -24,8 +25,10 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		s2 = empty;
 
-	for (len = 0; s1[len]; len++);
-	for (len2 = 0; s2[len2]; len2++);
+	for (len = 0; s1[len]; len++)
+		;
+	for (len2 = 0; s2[len2]; len2++)
+		;
 
 	a = malloc(sizeof(char) * (len + len2 + 1));
 
