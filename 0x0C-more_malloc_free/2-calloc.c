@@ -13,7 +13,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-    unsigned int i, a_size;
+	unsigned int i, a_size;
 	char *a;
 
 	if (size == 0 || nmemb == 0)
@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-    a_size = size * nmemb;
+	a_size = size * nmemb;
 
 	a = malloc(size * nmemb);
 
@@ -30,9 +30,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-    for (i = 0; i < a_size; i++)
+	for (i = 0; i < a_size; i++)
 		a[i] = 0;
 
-    return (a);
+	return (a);
 
 }
