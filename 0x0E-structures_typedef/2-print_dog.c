@@ -1,12 +1,11 @@
 #include "dog.h"
 
 /**
- *print_dog
+ * print_dog - print information of a one dog.
+ * @d: contains a structure of a information for a dog
  *
- *
- *
+ * Return - Always 0.
  */
-
 
 void print_dog(struct dog *d)
 {
