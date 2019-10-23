@@ -28,6 +28,13 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
+	if ((argv[2][0] != '+' && argv[2][0] != '-' && argv[2][0] != '*'
+	     && argv[2][0] != '/' && argv[2][0] != '%') || strlen(argv[2]) != 1)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
 	if ((argv[2][0] != '/' || argv[2][0] != '%') && (atoi(argv[3]) == 0))
 	{
 		printf("Error\n");
