@@ -28,6 +28,12 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
+	if ((argv[2][0] != '/' || argv[2][0] != '%') && (atoi(argv[3]) == 0))
+	{
+		puts("Error");
+		exit(100);
+	}
+
 	printf("%d\n", fp(atoi(argv[1]), atoi(argv[3])));
 
 	return (0);
