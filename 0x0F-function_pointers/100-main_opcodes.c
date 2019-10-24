@@ -9,9 +9,8 @@
 
 int main(int argc, char **argv)
 {
-	int x = atoi(argv[1]);
 
-	if (x < 0)
+	if ((atoi(argv[1]) < 0)
 	{
 		puts("Error");
 		exit(2);
@@ -22,6 +21,6 @@ int main(int argc, char **argv)
 		puts("Error");
 		exit(1);
 	}
+	return(0);
 
-	return (0);
 }
