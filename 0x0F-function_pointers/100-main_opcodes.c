@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -10,17 +11,17 @@
 int main(int argc, char **argv)
 {
 
+	if (argc != 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
+
 	if (atoi(argv[1]) < 0)
 	{
-		puts("Error");
+		printf("Error\n");
 		exit(2);
 	}
 
-	if (argc != 2)
-	{
-		puts("Error");
-		exit(1);
-	}
-	return(0);
-
+	return (0);
 }
