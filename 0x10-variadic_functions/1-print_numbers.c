@@ -10,17 +10,18 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 
-	va_list numbers;
 	unsigned int i;
-
-	if (separator == 0)
-		separator = "";
+	va_list numbers;
 
 	if (n == 0)
 	{
 		printf("\n");
 		return;
 	}
+
+	if (separator == 0)
+		separator = "";
+
 
 	va_start(numbers, n);
 
