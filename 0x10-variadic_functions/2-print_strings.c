@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - function thats prints numbers followed by a new line
+ * print_strings - function thats prints Strings followed by a new line
  * @separator: Define the separator for the numbers
  * @n: Define number of arguments.
  * Return: Void variable.
@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		word_v != NULL ? printf("%s", word_v) : printf("(nil)");
 
-		if ( i < n - 1 && separator != NULL)
+		if (i < n - 1 && separator != NULL)
 			printf("%s", separator);
 	}
 	printf("\n");
