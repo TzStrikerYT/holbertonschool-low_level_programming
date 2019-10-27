@@ -16,4 +16,18 @@ void print_all(const char * const format, ...);
 
 #ifndef STRUCTS
 #define STRUCTS
-#endif
+
+/**
+ * struct op - Struct for option.
+ *
+ * @c: String.
+ * @f: Pointer to function.
+ */
+
+typedef struct op
+{
+	char *c;
+	void (*f)(va_list);
+} print_opc;
+
+#endif  /* STRUCT_FOR_PRINTF_:v */
