@@ -8,7 +8,7 @@
  * Return: int variable.
  */
 
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int len = 0;
 
@@ -30,21 +30,13 @@ int _strlen(char *s)
 
 list_t *add_node(list_t **head, const char *str)
 {
-	char *temp;
 	list_t *node = malloc(sizeof(list_t));
 
 	if (node == NULL)
 		return (0);
 
-	else
-	{
-		temp = strdup(str);
-
-		if (temp == 0)
-			return (0);
-		node->str = temp;
-		node->len = _strlen(temp);
-	}
+	node->str = strdup(str);
+	node->len = _strlen(str);
 
 	node->next = *head;
 	*head = node;
