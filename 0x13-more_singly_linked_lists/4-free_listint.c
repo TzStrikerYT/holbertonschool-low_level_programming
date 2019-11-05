@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * free_list - free the list.
- * @head: contain a Struct of a list.
+ * free_listint - free the list.
+ * @head: contains a Struct of a list.
  * Return: void variable.
  */
 
@@ -11,7 +11,7 @@ void free_listint(listint_t *head)
 	if (head == 0)
 		return;
 
-	free_list(head->next);
+	free_listint(head->next);
 	free(head->n);
 	free(head);
 }
