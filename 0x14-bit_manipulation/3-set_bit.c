@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * get_bit - sets the value of a bit.
+ * set_bit - sets the value of a bit.
  * @n: contains a integer value.
  * @index: contains a index.
  * Return: 1 on Success, in case of error return -1.
