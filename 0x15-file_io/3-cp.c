@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, ERROR_CLOSE, from_fd), exit(100);
 
 	if (to_fd)
-		dprintf(STDERR_FILENO, ERROR_CLOSE, from_fd), exit(100)
+		dprintf(STDERR_FILENO, ERROR_CLOSE, from_fd), exit(100);
 
 	return (0);
 }
