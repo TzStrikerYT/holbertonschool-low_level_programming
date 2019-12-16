@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * size_t print_dlistint - print all elements of the list
+ * print_dlistint - print all elements of the list
  * @h: head of the list
  * Return: Nunber of elements in the list.
  */
