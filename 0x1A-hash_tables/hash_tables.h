@@ -36,6 +36,7 @@ typedef struct hash_table_s
 #define PROTOTYPES
 
 hash_table_t *hash_table_create(unsigned long int size);
+unsigned long hash_djb2(unsigned char *str);
 
 #endif /* PROTOTYPES */
 
