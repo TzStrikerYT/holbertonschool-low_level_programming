@@ -6,7 +6,7 @@
  * Return: hash key
  */
 
-unsigned long hash_djb2(unsigned char *str)
+unsigned long int hash_djb2(const unsigned char *str)
 {
 	unsigned long hash = 5381;
 	int c;
