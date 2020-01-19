@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * add_hash_node - adds hash node.
+ * add_hn - adds hash node.
  * @key: key you want add.
  * @value:value of the key.
  * Return: new node, NULL on error.
