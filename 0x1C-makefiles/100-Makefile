@@ -3,7 +3,7 @@ SRC = main.c holberton.c
 OBJ = $(patsubst %.c,%.o,$(SRC))
 NAME = holberton
 CFLAGS = -Wall -Werror -Wextra -pedantic
-.PHONY: all clean oclean fclean re #objetivo falso para evitar confilctos
+.PHONY : all clean oclean fclean re #objetivo falso para evitar confilctos
 RM = rm -f #FORCES THE DELETE
 
 all : m.h $(OBJ)
