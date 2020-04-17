@@ -13,9 +13,9 @@ int binary_search(int *array, size_t size, int value)
 {
 	int a = 0;
 	int b = (int)size - 1;
-	int i;
+	int i = 0;
 
-	for (i = 0; a <= b;)
+	while(a <= b)
 	{
 		printf("Sarching in array: ");
 		p_array(array, a, b);
