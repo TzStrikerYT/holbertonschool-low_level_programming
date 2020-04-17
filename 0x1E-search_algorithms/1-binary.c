@@ -31,6 +31,15 @@ int binary_search(int *array, size_t size, int value)
 	return (-1);
 }
 
+/**
+ * p_array - searches for a value in an array using binary search
+ * @array: input array
+ * @a: int value
+ * @b: int value
+ *
+ * Return: Void function
+ */
+
 void p_array(int *array, int a, int b)
 {
 	int i;
